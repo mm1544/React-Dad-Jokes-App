@@ -10,12 +10,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 30%; /* 30% across the "JokeList" item */
   text-align: center;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1),
     inset 0 0 25px #7e57c2;
-  z-index: 2;
+  z-index: 2; /*allowes the shadow to be on top of "JokeList-jokes"*/
 }
+
+
+/* 
+"rem" unit (standing for "root em"), it provides a way to specify lengths as fractions of the root element's font size. In practical terms, this almost always means the font size of the <html> element.
+*/
+
 
 .JokeList-title {
   font-size: 4rem;
@@ -24,6 +30,7 @@
   font-weight: 300;
   letter-spacing: 0.6rem;
 }
+
 .JokeList-title span {
   font-weight: 700;
   letter-spacing: 0;
@@ -34,20 +41,26 @@
   border-radius: 50%;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
+
+
 .JokeList-sidebar img:hover {
   animation-name: shake-slow;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
 }
+
+
+
 .JokeList-jokes {
   height: 90%;
   background: white;
   align-self: center;
   width: 70%;
-  overflow: scroll;
+  overflow: scroll; /* adds side scroling*/
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 .JokeList-spinner {
   color: white;
@@ -233,4 +246,4 @@
   98% {
     transform: translate(10px, -9px) rotate(2.5deg);
   }
-}
+} 

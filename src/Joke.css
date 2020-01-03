@@ -1,5 +1,5 @@
 .Joke {
-  display: flex;
+  display: flex; /*making its own flexbox*/
   border-bottom: 2px solid #eeeeee;
   align-items: center;
   justify-content: center;
@@ -48,6 +48,9 @@
 }
 
 @keyframes move-up {
+  /* at 0, 50 and 100% of duration, object is in its initial position. 
+  
+  At duration 25 and 75% object should be moved up -3px*/
   0%,
   50%,
   100% {
@@ -78,7 +81,7 @@
 
 .Joke-smiley {
   font-size: 3rem;
-  margin-left: auto;
+  margin-left: auto; /* object will be "pushed all the way to the right"*/
   border-radius: 50%;
   box-shadow: 0 10px 38px rgba(0, 0, 0, 0.2), 0 10px 12px rgba(0, 0, 0, 0.1);
 }
